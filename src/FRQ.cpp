@@ -7,7 +7,7 @@ FRQmodule::FRQmodule(long baudRate)
 
 float FRQmodule::getFrequency(bool twoFreq)
 {
-    if (millis() - tLastGet >= 10)
+    if (millis() - tLastGet >= 20)
     {
         Serial1.write('f');
         delay(1);
